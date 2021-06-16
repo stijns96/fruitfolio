@@ -1,0 +1,36 @@
+{
+    "name": "leerdoel-4",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stijns96/leerdoel-4.git"
+    },
+    "author": "Shantusha Ramsoebhag, Andrew Ruijtenbeek, Calvin Schmidt, Stijn Slats",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/stijns96/fruitfolio/issues"
+    },
+    "homepage": "https://github.com/stijns96/leerdoel-4#readme",
+    "devDependencies": {
+        "autoprefixer": "^9.8.0",
+        "browser-sync": "^2.26.7",
+        "cssnano": "^4.1.10",
+        "gulp": "^4.0.2",
+        "gulp-clean": "^0.4.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-postcss": "^8.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.1.0",
+        "gulp-sourcemaps": "^2.6.5",
+        "gulp-uglify": "^3.0.2",
+        "merge-stream": "^2.0.0",
+        "postcss-easing-gradients": "^3.0.1"
+    }
+}

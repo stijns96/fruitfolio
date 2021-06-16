@@ -1,0 +1,23 @@
+// Personal colors
+$color-stijn: #E41D20;
+$color-andrew: #5BB130;
+$color-calvin: #F7A41A;
+$color-shantusha: #E62250;
+
+// Main colors
+$white: #fff;
+$gray: #f2f2f2;
+
+$black:#272D2E;
+$matte-black:#393939;
+
+// Overlays
+$top-right-overlay: linear-gradient(to top right, rgba(0, 0, 0, 0.1), steps(2, skip-none), transparent);
+$bottom-left-overlay: linear-gradient(to bottom left, rgba(0, 0, 0, 0.04), steps(3, skip-none), transparent);
+
+// Gradients
+$primary-colors-grad: linear-gradient(to right,
+    $color-stijn,
+    $color-andrew,
+    $color-calvin,
+    $color-shantusha);

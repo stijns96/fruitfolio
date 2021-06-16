@@ -1,0 +1,21 @@
+#shantusha-tab {
+    .hero {
+        background-color: $color-shantusha;
+    }
+
+    .projecten {
+        .item {
+            color: $color-shantusha;
+
+            .card {
+                &:hover {
+                    background-color: $color-shantusha;
+                }
+
+                .card-link {
+                    color: $color-shantusha;
+                }
+            }
+        }
+    }
+}

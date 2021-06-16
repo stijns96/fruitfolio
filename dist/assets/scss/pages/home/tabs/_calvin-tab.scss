@@ -1,0 +1,21 @@
+#calvin-tab {
+    .hero {
+        background-color: $color-calvin;
+    }
+
+    .projecten {
+        .item {
+            color: $color-calvin;
+
+            .card {
+                &:hover {
+                    background-color: $color-calvin;
+                }
+
+                .card-link {
+                    color: $color-calvin;
+                }
+            }
+        }
+    }
+}

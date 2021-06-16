@@ -1,0 +1,65 @@
+// Abstract
+@import '../../../abstracts/variables';
+@import '../../../abstracts/mixins';
+
+// Base
+@import '../../../base/colors';
+
+
+.hero {
+    background-image: url(../../../../images/bg_melon.png);
+}
+
+.btn-primary {
+    border: none;
+    transition: $trans-02;
+    transition-delay: .2s;
+    background-color: $color-shantusha;
+
+    i {
+        opacity: 0;
+        margin-left: -15px;
+        transition: $trans-02;
+        transition-delay: 0s;
+    }
+
+    &:hover,
+    &:focus {
+        padding-left: 0;
+        box-shadow: none;
+        color: $color-shantusha;
+        transition-delay: 0s;
+        background-color: transparent;
+
+        i {
+            opacity: 1;
+            margin-left: 0;
+            color: $color-shantusha;
+            transition-delay: .2s;
+        }
+    }
+}
+
+a:not(.btn) {
+    color: $color-shantusha;
+}
+
+.projecten {
+    .item {
+        color: $color-shantusha;
+
+        .card {
+            &:hover {
+                background-color: $color-shantusha;
+            }
+
+            .card-link {
+                color: $color-shantusha;
+            }
+        }
+    }
+}
+
+h2 {
+    color: $color-shantusha;
+}

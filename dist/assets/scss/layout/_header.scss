@@ -1,0 +1,71 @@
+header {
+    .navbar-nav {
+        width: 100%;
+
+        justify-content: space-around;
+
+        .nav-item {
+            width: 100%;
+            text-align: center;
+            transition: $trans-02;
+
+            &:nth-of-type(1) {
+                background-color: $color-stijn;
+            }
+
+            &:nth-of-type(2) {
+                background-color: $color-andrew;
+            }
+
+            &:nth-of-type(3) {
+                background-color: $color-calvin;
+            }
+
+            &:nth-of-type(4) {
+                background-color: $color-shantusha;
+            }
+
+            &:hover {
+                filter: grayscale(50%);
+            }
+
+
+            .nav-link {
+                color: $white;
+                padding-bottom: 0;
+                letter-spacing: 1px;
+                font-family: $font-family-headings;
+
+                display: flex;
+                flex-wrap: nowrap;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 75px;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+@include media-up(lg) {
+    header {
+        box-shadow: $box-shadow;
+
+        .hamburger {
+            display: none;
+        }
+    }
+}
+
+@include media-down(lg) {
+    header {
+        transition: background-color $trans-02;
+
+        &.active {
+            background-color: $color-stijn;
+        }
+    }
+}

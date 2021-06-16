@@ -1,0 +1,49 @@
+// Abstract
+@import '../../../abstracts/variables';
+@import '../../../abstracts/mixins';
+
+// Base
+@import '../../../base/colors';
+
+
+.hero {
+    background-image: url(../../../../images/bg_kiwi.png);
+}
+
+section {
+    &:nth-of-type(2) {
+        .row {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .row {
+        align-items: center;
+
+        .embed-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            border-radius: $border-radius-20;
+            box-shadow: $box-shadow;
+
+            iframe,
+            object,
+            embed {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+
+    }
+}
+
+h2 {
+    color: $color-andrew;
+}

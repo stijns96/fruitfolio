@@ -1,0 +1,277 @@
+.main-logo {
+    top: 25px;
+    left: 25px;
+    z-index: 999;
+    color: $white;
+    position: fixed;
+    text-decoration: none;
+    transition: $trans-02;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    figure {
+        margin: 0;
+        padding: 10px;
+        margin-right: 10px;
+        background-color: $white;
+        border-radius: $border-radius-100;
+        box-shadow: $box-shadow;
+
+        img {
+            width: 50px;
+            transition: $trans-02;
+        }
+    }
+
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+
+    &.shrink {
+        margin-top: 7.5px;
+
+        figure {
+            img {
+                width: 30px;
+            }
+        }
+
+        span {
+            animation: fadeLogoOut .2s ease-in-out forwards;
+
+        }
+    }
+}
+
+
+.projecten {
+    margin-top: 100px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .item {
+        .card {
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            transition: $trans-02;
+            box-shadow: $box-shadow;
+            background-color: $gray;
+            background-image: $bottom-left-overlay;
+
+            &:hover {
+                color: $white;
+                box-shadow: none;
+
+                .card-body {
+                    .card-link {
+                        color: $white !important;
+
+                        i {
+                            opacity: 1;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .card-title {
+                    margin: 0;
+                    margin-bottom: 5px;
+                }
+
+                .card-subtitle {
+                    margin: 0;
+                    display: block;
+                    margin-bottom: 25px;
+                }
+
+                .card-link {
+                    padding: 10px 15px;
+                    margin-bottom: 25px;
+                    display: inline-block;
+                    transition: $trans-02;
+                    border: 1px solid transparent;
+                    border-radius: $border-radius-100;
+
+                    &:hover {
+                        border: 1px solid $white;
+                    }
+
+                    i {
+                        opacity: 0;
+                        color: $white;
+                        margin-left: -15px;
+                        transition: $trans-02;
+                    }
+                }
+
+                img {
+                    width: inherit;
+                    max-width: 100%;
+                    max-height: 175px;
+                }
+            }
+        }
+    }
+}
+
+section {
+    padding: 50px 0;
+}
+
+p {
+    margin: 0;
+}
+
+article {
+    .row {
+        margin-bottom: 50px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.hero {
+    color: $white;
+    text-align: center;
+}
+
+button {
+    &:focus {
+        outline: none;
+    }
+}
+
+
+.projecten {
+    margin-top: 100px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .item {
+        .card {
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            transition: $trans-02;
+            box-shadow: $box-shadow;
+            background-color: $gray;
+            background-image: $bottom-left-overlay;
+
+            &:hover {
+                color: $white;
+                box-shadow: none;
+
+                .card-body {
+                    .card-link {
+                        color: $white !important;
+
+                        i {
+                            opacity: 1;
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .card-title {
+                    margin: 0;
+                    margin-bottom: 5px;
+                }
+
+                .card-subtitle {
+                    margin: 0;
+                    display: block;
+                    margin-bottom: 25px;
+                }
+
+                .card-link {
+                    padding: 10px 15px;
+                    margin-bottom: 25px;
+                    display: inline-block;
+                    transition: $trans-02;
+                    border: 1px solid transparent;
+                    border-radius: $border-radius-100;
+
+                    &:hover {
+                        border: 1px solid $white;
+                    }
+
+                    i {
+                        opacity: 0;
+                        color: $white;
+                        margin-left: -15px;
+                        transition: $trans-02;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-up(lg) {
+    body.detail {
+        margin-top: 84px;
+    }
+
+    section {
+        padding: 100px 0;
+    }
+}
+
+@include media-down(md) {
+    .main-logo {
+        top: 10px;
+        left: 10px;
+
+        figure {
+
+            img {
+                width: 30px;
+            }
+        }
+
+        span {
+            opacity: 1;
+            margin-left: 0;
+            transition: $trans-02;
+        }
+
+        &.shrink {
+            margin-top: 0;
+
+            span {
+                opacity: 0;
+                margin-left: -10px;
+            }
+        }
+    }
+}
+
+@include media-down(lg) {
+    .projecten {
+        .item {
+            margin-bottom: 50px;
+        }
+    }
+}

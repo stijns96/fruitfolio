@@ -1,0 +1,20 @@
+@keyframes imageScroll {
+    0% {
+        background-position: 0 -75px;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+@keyframes fadeLogoOut {
+    75% {
+        opacity: 0;
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -250px;
+    }
+}

@@ -1,0 +1,21 @@
+#andrew-tab {
+    .hero {
+        background-color: $color-andrew;
+    }
+
+    .projecten {
+        .item {
+            color: $color-andrew;
+
+            .card {
+                &:hover {
+                    background-color: $color-andrew;
+                }
+
+                .card-link {
+                    color: $color-andrew;
+                }
+            }
+        }
+    }
+}

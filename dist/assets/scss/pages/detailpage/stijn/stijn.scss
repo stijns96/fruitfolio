@@ -1,0 +1,64 @@
+// Abstract
+@import '../../../abstracts/variables';
+@import '../../../abstracts/mixins';
+
+// Base
+@import '../../../base/colors';
+
+.hero {
+    background-image: url(../../../../images/bg_apple.png);
+}
+
+section {
+    &:nth-of-type(2) {
+        .row {
+            flex-direction: row-reverse;
+        }
+    }
+
+    img {
+        box-shadow: none !important;
+    }
+
+    .row {
+        align-items: center;
+
+        .btn-primary {
+            border: none;
+            transition: $trans-02;
+            transition-delay: .2s;
+            background-color: $color-stijn;
+
+            i {
+                opacity: 0;
+                margin-left: -15px;
+                transition: $trans-02;
+                transition-delay: 0s;
+            }
+
+            &:hover,
+            &:focus {
+                padding-left: 0;
+                box-shadow: none;
+                color: $color-stijn;
+                transition-delay: 0s;
+                background-color: transparent;
+
+                i {
+                    opacity: 1;
+                    margin-left: 0;
+                    color: $color-stijn;
+                    transition-delay: .2s;
+                }
+            }
+        }
+
+        a:not(.btn) {
+            color: $color-stijn;
+        }
+    }
+}
+
+h2 {
+    color: $color-stijn;
+}

@@ -1,0 +1,32 @@
+footer {
+    padding: 25px 0;
+    background-image: $primary-colors-grad;
+
+    .logo {
+        color: $white;
+        text-decoration: none;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        figure {
+            margin: 0;
+            padding: 10px;
+            margin-right: 10px;
+            background-color: $white;
+            border-radius: $border-radius-100;
+
+            img {
+                width: 50px;
+                transition: $trans-02;
+            }
+        }
+
+        span {
+            opacity: 1;
+            margin-left: 0;
+            transition: $trans-02;
+        }
+    }
+}

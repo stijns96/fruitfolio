@@ -1,0 +1,61 @@
+// Abstract
+@import '../../abstracts/variables';
+@import '../../abstracts/mixins';
+
+// Base
+@import '../../base/colors';
+
+.detail {
+    article {
+        section {
+            &:nth-of-type(even) {
+                background-color: $gray;
+            }
+
+            &:not(:last-of-type) {
+                img {
+                    border-radius: $border-radius-20;
+                    box-shadow: $box-shadow;
+                }
+            }
+
+            ul {
+                li {
+                    padding-left: 5px;
+                    list-style-type: '-';
+                }
+            }
+
+
+
+            a:not(.btn) {
+                font-weight: 600;
+                transition: $trans-02;
+
+                &:hover {
+                    filter: grayscale(100%);
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    background-size: 150px;
+}
+
+.projecten {
+    justify-content: center;
+}
+
+@include media-down(md) {
+    section {
+        .row {
+            text-align: center;
+
+            .btn-primary {
+                margin-bottom: 50px;
+            }
+        }
+    }
+}

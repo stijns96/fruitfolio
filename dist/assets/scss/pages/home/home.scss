@@ -1,0 +1,16 @@
+// Abstract
+@import '../../abstracts/variables';
+@import '../../abstracts/mixins';
+
+// Base
+@import '../../base/colors';
+
+// Sections
+#home {
+    @import 'landing.scss';
+
+    @import 'tabs/andrew-tab.scss';
+    @import 'tabs/calvin-tab.scss';
+    @import 'tabs/shantusha-tab.scss';
+    @import 'tabs/stijn-tab.scss';
+}

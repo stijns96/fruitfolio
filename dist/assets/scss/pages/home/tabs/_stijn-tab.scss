@@ -1,0 +1,21 @@
+#stijn-tab {
+    .hero {
+        background-color: $color-stijn;
+    }
+
+    .projecten {
+        .item {
+            color: $color-stijn;
+
+            .card {
+                &:hover {
+                    background-color: $color-stijn;
+                }
+
+                .card-link {
+                    color: $color-stijn;
+                }
+            }
+        }
+    }
+}

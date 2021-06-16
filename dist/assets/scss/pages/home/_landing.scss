@@ -1,0 +1,122 @@
+#landing {
+    padding: 0;
+    color: $white;
+    height: 100vh;
+    overflow: hidden;
+
+    .character {
+        cursor: pointer;
+        transition: $trans-02;
+        filter: grayscale(100%);
+
+        display: flex;
+
+        &::after {
+            content: "";
+            opacity: 0;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+            background-size: 75px;
+            background-position: center;
+            transition: $trans-02;
+            animation: imageScroll 2s linear infinite;
+        }
+
+        &:hover,
+        &.active {
+            filter: grayscale(0%);
+
+            &::after {
+                opacity: 1;
+            }
+        }
+
+        &#andrew {
+            background-color: $color-andrew;
+
+            &::after {
+                background-image: url(../../../images/bg_kiwi.png);
+            }
+        }
+
+        &#calvin {
+            background-color: $color-calvin;
+
+            &::after {
+                background-image: url(../../../images/bg_orange.png);
+            }
+        }
+
+        &#shantusha {
+            background-color: $color-shantusha;
+
+            &::after {
+                background-image: url(../../../images/bg_melon.png);
+            }
+        }
+
+        &#stijn {
+            background-color: $color-stijn;
+
+            &::after {
+                background-image: url(../../../images/bg_apple.png);
+            }
+        }
+
+
+        // Below 768px
+        @include media-down(md) {
+            padding: 15px;
+            text-align: right;
+            height: calc(100vh/4);
+
+            &:nth-of-type(odd) {
+                text-align: left;
+
+                flex-direction: row-reverse;
+            }
+
+            .user-info {
+                height: 100%;
+                width: calc(100vw/2);
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .user-anim {
+                width: 50vw;
+
+                .animation {
+                    height: 100%;
+                }
+            }
+        }
+
+
+
+
+        // Above 768px
+        @include media-up(md) {
+            padding: 25px;
+            height: 100vh;
+            text-align: center;
+
+            flex-direction: column;
+            justify-content: center;
+
+            .user-anim {
+                margin-bottom: 25px;
+
+                .animation {
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
